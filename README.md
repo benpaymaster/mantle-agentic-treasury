@@ -53,9 +53,8 @@ AGENT_ID=0x... # Generated via ERC-8004 Initializer
 
 ### 3\. Execute Agent
 
-Bash
+```bash
 
-```
 python3 -m src.agents.treasury_guard
 
 ```
