@@ -1,39 +1,34 @@
 
 # 🛡️ Mantle Agentic Treasury Guard
-### *Autonomous DeFi Yield Optimization on Mantle Network*
+**Autonomous AI Agent for mETH Yield Optimization | Mantle Turing Test Hackathon Entry**
 
-**Mantle Agentic Treasury Guard** is a modular AI agent designed to automate the lifecycle of $MNT staking. Built during the 2026 "Agentic Summer," this tool leverages Mantle's high-performance modular rollup architecture to monitor, analyze, and execute staking strategies with minimal gas overhead and maximum capital efficiency.
+## 🚀 Overview
+The Mantle Agentic Treasury Guard is an autonomous, on-chain agent designed to maximize $mETH yield through intelligent, intent-based decision making. Built for the **Mantle Turing Test 2026**, it bridges the gap between traditional liquidity management and agentic commerce.
 
----
-
-## 🚀 The Vision
-In a multi-chain world, manual treasury management is a bottleneck. This project moves away from "User-Initiated" DeFi toward **"Intent-Based" Autonomy**. The agent doesn't just wait for commands; it actively seeks the most efficient path to yield based on real-time on-chain data.
+Unlike standard bots, this agent utilizes the **ERC-8004 Agent Identity Standard** to build a verifiable on-chain reputation while logging every strategic rationale directly to the Mantle Network.
 
 ## 🧠 Core Intelligence
-The agent operates via a three-tier modular architecture:
+The agent operates via a modular, "Intent-Based" architecture:
 
-1. **The Sensor (`MantleClient`):** High-frequency polling of Mantle Mainnet RPCs for liquidity, gas prices, and wallet state.
-2. **The Brain (`TreasuryGuard`):** A decision engine that calculates the "Staking ROI Threshold"---ensuring that the projected yield from $mETH significantly outweighs the transaction friction (gas).
-3. **The Executor:** (In-Dev) Utilizing the **ERC-8183 Agent Standard** to interact with the Mantle LSP (Liquid Staking Protocol) autonomously.
+1. **The Sensor (`MantleClient`):** Monitors Mantle Mainnet for gas spikes, $MNT liquidity, and staking APR.
+2. **The Voice (`AI Rationale`):** Every decision is justified by an AI reasoning engine, ensuring "On-Chain Benchmarking" transparency.
+3. **The Identity (`ERC-8004`):** Features a unique Agent NFT ID and an autonomous reputation scoring system.
+4. **The Strategist:** Automatically toggles between `AGGRESSIVE` and `CONSERVATIVE` modes based on real-time yield confidence.
 
 ---
 
-## 🛠️ Technical Stack
+## 🛠️ Hackathon Tech Stack
 - **Network:** Mantle Mainnet (Chain ID: 5000)
+- **Standards:** ERC-8004 (Agent Identity & Reputation)
 - **Language:** Python 3.12+
-- **Blockchain Interface:** Web3.py
-- **Standards:** ERC-8183 (Agentic Account Abstraction)
-- **Infrastructure:** Mantle Modular DA & mETH Staking Protocol
+- **AI Brain:** Gemini LLM (Strategic Logic & Sentiment Analysis)
+- **Blockchain:** Web3.py & Mantle Modular DA
 
 ---
 
-## 🚦 Quick Start
+## 🏁 Quick Start
 
-### 1. Prerequisites
-- Python 3.12+
-- A Mantle RPC URL (Default: `https://rpc.mantle.xyz`)
-
-### 2. Setup
+### 1. Setup Environment
 ```bash
 git clone [https://github.com/benpaymaster/mantle-agentic-treasury.git](https://github.com/benpaymaster/mantle-agentic-treasury.git)
 cd mantle-agentic-treasury
@@ -43,43 +38,48 @@ pip install -r requirements.txt
 
 ```
 
-### 3\. Environment Configuration
+### 2\. Configuration
 
-Create a `.env` file in the root directory:
+Create a `.env` file:
 
-Plaintext
+Code snippet
 
 ```
 MANTLE_RPC_URL=[https://rpc.mantle.xyz](https://rpc.mantle.xyz)
-PUBLIC_WALLET_ADDRESS=0x... # Your wallet address
+PUBLIC_WALLET_ADDRESS=0x...
+AGENT_ID=0x... # Generated via ERC-8004 Initializer
 
 ```
 
-### 4\. Run the Agent
+### 3\. Execute Agent
 
-```bash
+Bash
+
+```
 python3 -m src.agents.treasury_guard
 
 ```
 
 * * * * *
 
-📈 Roadmap
-----------
+📈 Roadmap & Competition Progress
+---------------------------------
 
--   [x] **Phase 1:** Establish hardened connection to Mantle Mainnet.
+-   [x] **Phase 1: ClawHack Ready** - Hardened connection and ROI-tracking implemented.
 
--   [x] **Phase 2:** Implement "Watch-Only" decision logic and gas tracking.
+-   [x] **ERC-8004 Integration** - On-chain agent identity and reputation system live.
 
--   [ ] **Phase 3:** Integrate LLM-driven market sentiment analysis (Gemini/GPT-4).
+-   [x] **Verifiable Benchmarking** - On-chain logging of AI rationale for every "Intent."
 
--   [ ] **Phase 4:** Secure transaction signing via encrypted local Vault.
+-   [ ] **RealClaw Deployment** - Finalizing strategy for Merchant Moe and Agni Finance volume.
+
+-   [ ] **AI Awakening (Phase 2)** - Global live-stream performance benchmarking.
 
 * * * * *
 
-🤝 Contributing
----------------
+🤝 Competition Track
+--------------------
 
-This project is part of the **benpaymaster** open-source initiative to simplify decentralized delivery of financial yield. Pull requests for new strategies are welcome.
+This project is currently competing in the **AI x RWA** and **Agentic Wallets & Economy** tracks of the Mantle Turing Test Hackathon.
 
 **License:** MIT
